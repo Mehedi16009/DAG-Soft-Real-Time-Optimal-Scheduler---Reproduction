@@ -39,7 +39,8 @@ This project is designed to be a **fully reproducible artifact** for the origina
 
 ## Methodology (Illustration)
 
-![Methodology Figure](./results/methodology.png)
+<img width="1968" height="2209" alt="gugu" src="https://github.com/user-attachments/assets/8fa6a54a-4cc7-49b5-831b-0c846e8f4f4b" />
+
 
 The figure above shows the workflow:
 
@@ -54,15 +55,18 @@ The figure above shows the workflow:
 
 ### Figure 8(a): Response-time bound vs. Normalized Utilization
 
-![Fig 8(a)](./results/fig8a.png)
+<img width="2100" height="1638" alt="figure_8a_utilization_sweep" src="https://github.com/user-attachments/assets/64f9a40e-c0b4-4fc8-9490-5978916475fd" />
+
 
 ### Figure 8(b): Response-time bound vs. Processor Count
 
-![Fig 8(b)](./results/fig8b.png)
+<img width="2074" height="1638" alt="figure_8b_processor_sweep" src="https://github.com/user-attachments/assets/b445687c-82ca-472c-92b8-a09b597e8aed" />
+
 
 ### Figure 8(c): Response-time bound vs. Edge Probability
+<img width="2074" height="1638" alt="figure_8c_edge_probability_sweep" src="https://github.com/user-attachments/assets/87814630-2c0f-49bc-9151-ebbb9910f623" />
 
-![Fig 8(c)](./results/fig8c.png)
+
 
 ---
 
