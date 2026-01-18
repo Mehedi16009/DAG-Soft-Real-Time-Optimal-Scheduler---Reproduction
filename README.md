@@ -69,48 +69,30 @@ The figure above shows the workflow:
 ## Main Equations (Core Concepts)
 
 ### 1. DAG Task Model
+<img width="673" height="228" alt="Screenshot 2026-01-18 at 2 06 42 PM" src="https://github.com/user-attachments/assets/ad9d6142-705d-410e-9830-6a43939d2e41" />
 
-A DAG task is defined as:
 
-- G = (V, E)
-- Nodes v in V represent subtasks
-- Edges (u, v) in E represent precedence constraints
-
-Each node has:
-
-- Worst-case execution time C_v
-- Parallelism cap P_v
 
 ---
 
 ### 2. Utilization
 
-Total utilization:
+<img width="464" height="195" alt="Screenshot 2026-01-18 at 2 06 01 PM" src="https://github.com/user-attachments/assets/eb79e5ce-8e8e-48dc-ae85-e281d2ac4739" />
 
-U = (sum_{v in V} C_v) / T
 
-Node-level utilization:
-
-u_v = C_v / T
 
 ---
 
 ### 3. Response-Time Bound (Original)
+<img width="516" height="178" alt="Screenshot 2026-01-18 at 2 03 32 PM" src="https://github.com/user-attachments/assets/ad40e769-25d6-4853-a6c0-5f44ab5e591f" />
 
-R <= max_{ell} { L(ell) + (W - L(ell)) / m }
 
-Where:
-
-- L(ell) is the length of a transformed path in G(ell)
-- W = sum_{v in V} C_v
 
 ---
 
 ### 4. Refined Bound (Pruned Paths)
 
-R <= max_{ell} { L_f(ell) + (W - L_f(ell)) / m }
-
-Where L_f(ell) is the length of a feasible generalized path in a pruned transformed DAG.
+<img width="632" height="144" alt="Screenshot 2026-01-18 at 2 04 56 PM" src="https://github.com/user-attachments/assets/48981577-fef0-4674-b6ca-01307d68b134" />
 
 ---
 
