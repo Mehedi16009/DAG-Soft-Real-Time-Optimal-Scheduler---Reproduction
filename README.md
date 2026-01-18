@@ -72,47 +72,45 @@ The figure above shows the workflow:
 
 A DAG task is defined as:
 
-- \( G = (V, E) \)  
-- Nodes \( v \in V \) represent subtasks
-- Edges \( (u, v) \in E \) represent precedence constraints
+- G = (V, E)
+- Nodes v in V represent subtasks
+- Edges (u, v) in E represent precedence constraints
 
 Each node has:
 
-- Worst-case execution time \( C_v \)
-- Parallelism cap \( P_v \)
+- Worst-case execution time C_v
+- Parallelism cap P_v
+
+---
 
 ### 2. Utilization
 
 Total utilization:
 
-\[
-U = \frac{\sum_{v \in V} C_v}{T}
-\]
+U = (sum_{v in V} C_v) / T
 
 Node-level utilization:
 
-\[
-u_v = \frac{C_v}{T}
-\]
+u_v = C_v / T
+
+---
 
 ### 3. Response-Time Bound (Original)
 
-\[
-R \le \max_{\ell} \left\{ L(\ell) + \frac{W - L(\ell)}{m} \right\}
-\]
+R <= max_{ell} { L(ell) + (W - L(ell)) / m }
 
 Where:
 
-- \( L(\ell) \) is the length of a transformed path in \( G(\ell) \)
-- \( W = \sum_{v \in V} C_v \)
+- L(ell) is the length of a transformed path in G(ell)
+- W = sum_{v in V} C_v
+
+---
 
 ### 4. Refined Bound (Pruned Paths)
 
-\[
-R \le \max_{\ell} \left\{ L_f(\ell) + \frac{W - L_f(\ell)}{m} \right\}
-\]
+R <= max_{ell} { L_f(ell) + (W - L_f(ell)) / m }
 
-Where \( L_f(\ell) \) is the length of a **feasible** generalized path in a pruned transformed DAG.
+Where L_f(ell) is the length of a feasible generalized path in a pruned transformed DAG.
 
 ---
 
